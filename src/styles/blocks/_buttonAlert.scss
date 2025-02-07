@@ -1,6 +1,7 @@
 
 .cookies__alert {
     bottom: 5%;
+    position: fixed;
     transition-duration: var(--transition-duration);
     left: 50vw;
     translate: -50%;
