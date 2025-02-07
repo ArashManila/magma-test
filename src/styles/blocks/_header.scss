@@ -1,0 +1,19 @@
+.header{
+  background-color: #f1f1f2;
+  margin-bottom: 10px;
+  hr{
+    margin-left:20px;
+  }
+  &-button{
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  &__nav-block{
+    color:grey;
+    margin-left:20px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+
+}

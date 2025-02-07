@@ -172,8 +172,44 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-inline: 16px;
+  padding-block: 4px;
 }
 
 .header {
   background-color: #f1f1f2;
+  margin-bottom: 10px;
+}
+.header hr {
+  margin-left: 20px;
+}
+.header-button {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.header__nav-block {
+  color: grey;
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.content {
+  padding-inline: 10px;
+}
+
+th {
+  background-color: #f1f1f2;
+  padding: 0;
+  border: 2px solid #d7d7d7;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  border-bottom: 2px solid #d7d7d7;
 }/*# sourceMappingURL=main.css.map */
