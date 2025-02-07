@@ -1,0 +1,40 @@
+
+.cookies__alert {
+    bottom: 5%;
+    transition-duration: var(--transition-duration);
+    left: 50vw;
+    translate: -50%;
+    z-index: 3;
+
+  &-close-button-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 1.5%;
+    margin-bottom: -32px;
+  }
+  &-is-show {
+    bottom: 5%;
+    transition-duration: var(--transition-duration);
+    left: 50vw;
+    translate: -50%;
+    z-index: 3;
+  }
+  &-inner {
+    background-color: black;
+    border-radius: var(--border-radius-small);
+    color: #fff;
+    width: 1285px;
+    height: 120px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 140px;
+  }
+  &-left {
+    max-width: 780px;
+  }
+  &-right-container {
+    display: flex;
+    column-gap: 20px;
+  }
+}

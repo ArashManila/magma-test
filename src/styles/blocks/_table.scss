@@ -1,20 +1,29 @@
 th{
   background-color: #f1f1f2;
-  padding:0;
-  border: 2px solid #d7d7d7;
+  padding-inline:0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d7d7d7;
+  border-right: 1px solid #d7d7d7;
 }
 
 table{
   width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table__data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
   tr{
-    border-bottom: 2px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
   }
 
-// td{
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+td{
+  text-align: center;
+  max-width: 200px;
+}

@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import homeIcon from './images/home-icon.svg'
+import Modal from './Modal';
 
 function App() {
+  const [activeCraeteButton,setActiveCreateButton] = useState<boolean>(false);
   return (
     <>
       <header className="header">
@@ -10,18 +13,19 @@ function App() {
           &gt;
           <span>Проекты</span>
         </div>
-        <button className="button header-button">Создать проект</button>
+        <button className="button header-button" onClick={() => setActiveCreateButton(true)}>Создать проект</button>
+        
       </header>
       <main className="content">
         <table>
           <thead>
               <tr>
-                  <th>Столбец 1 </th>
-                  <th>Столбец 2 </th>
-                  <th>Столбец 3 </th>
-                  <th>Столбец 4 </th>
-                  <th>Столбец 5 </th>
-                  <th>Столбец 6 </th>
+                  <th>Проект</th>
+                  <th>Название</th>
+                  <th>ГИП</th>
+                  <th>Тип ОКС</th>
+                  <th>Объект строительства</th>
+                  <th>Дата заврешения</th>
               </tr>
           </thead>
           <tbody>
@@ -42,57 +46,57 @@ function App() {
               <td><span>Данные 26</span></td>
             </tr>
             <tr>
-              <td>Данные 31</td>
-              <td>Данные 32</td>
-              <td>Данные 33</td>
-              <td>Данные 34</td>
-              <td>Данные 35</td>
-              <td>Данные 36</td>
+              <td><span>Данные 31</span></td>
+              <td><span>Данные 32</span></td>
+              <td><span>Данные 33</span></td>
+              <td><span>Данные 34</span></td>
+              <td><span>Данные 35</span></td>
+              <td><span>Данные 36</span></td>
             </tr>
             <tr>
-              <td>Данные 41</td>
-              <td>Данные 42</td>
-              <td>Данные 43</td>
-              <td>Данные 44</td>
-              <td>Данные 45</td>
-              <td>Данные 46</td>
+              <td><span>Данные 41</span></td>
+              <td><span>Данные 42</span></td>
+              <td><span>Данные 43</span></td>
+              <td><span>Данные 44</span></td>
+              <td><span>Данные 45</span></td>
+              <td><span>Данные 46</span></td>
             </tr>
             <tr>
-              <td>Данные 51</td>
-              <td>Данные 52</td>
-              <td>Данные 53</td>
-              <td>Данные 54</td>
-              <td>Данные 55</td>
-              <td>Данные 56</td>
+              <td><span>Данные 51</span></td>
+              <td><span>Данные 52</span></td>
+              <td><span>Данные 53</span></td>
+              <td><span>Данные 54</span></td>
+              <td><span>Данные 55</span></td>
+              <td><span>Данные 56</span></td>
             </tr>
             <tr>
-              <td>Данные 61</td>
-              <td>Данные 62</td>
-              <td>Данные 63</td>
-              <td>Данные 64</td>
-              <td>Данные 65</td>
-              <td>Данные 66</td>
+              <td><span>Данные 61</span></td>
+              <td><span>Данные 62</span></td>
+              <td><span>Данные 63</span></td>
+              <td><span>Данные 64</span></td>
+              <td><span>Данные 65</span></td>
+              <td><span>Данные 66</span></td>
             </tr>
             <tr>
-              <td>Данные 71</td>
-              <td>Данные 72</td>
-              <td>Данные 73</td>
-              <td>Данные 74</td>
-              <td>Данные 75</td>
-              <td>Данные 76</td>
+              <td><span>Данные 71</span></td>
+              <td><span>Данные 72</span></td>
+              <td><span>Данные 73</span></td>
+              <td><span>Данные 74</span></td>
+              <td><span>Данные 75</span></td>
+              <td><div>Данные 76</div></td>
             </tr>
             <tr>
-              <td>Данные 81</td>
-              <td>Данные 82</td>
-              <td>Данные 83</td>
-              <td>Данные 84</td>
-              <td>Данные 85</td>
-              <td>Данные 86</td>
+              <td ><span>Данные 81</span></td>
+              <td ><span>Данные 82</span></td>
+              <td><span>Данные 83</span></td>
+              <td><span>Данные 84</span></td>
+              <td><span>Данные 85</span></td>
+              <td><span>Данные 86</span></td>
             </tr>
           </tbody>
         </table>
       </main>
-      
+      {activeCraeteButton && (<Modal active={activeCraeteButton} setActive={setActiveCreateButton}/>)}
     </>
   )
 }
