@@ -1,0 +1,11 @@
+button{
+  @include reset-button;
+}
+
+.button{
+  background-color: #287aff;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
