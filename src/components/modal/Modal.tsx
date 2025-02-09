@@ -1,11 +1,11 @@
 import crossButton from '../../images/close-black-button.svg'
 
 type ModalProps = {
-  active: boolean;
   setActive: (active: boolean) => void;
+  content:string;
 };
 
-const Modal = ({ active, setActive }: ModalProps) => {
+const Modal = ({content, setActive }: ModalProps) => {
 
   const CloseFunction = () => {
     setActive(false);
@@ -21,7 +21,7 @@ const Modal = ({ active, setActive }: ModalProps) => {
     <div className="cookies__alert-inner">
         <div className="cookies__alert-left">
             <p>
-              Данный функционал ещё не реализован.
+              {content}
             </p>
         </div>
     </div>

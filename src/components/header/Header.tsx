@@ -15,7 +15,7 @@ export const Header = ()=>{
         </div>
         <button className="button header-button" onClick={() => setActiveCreateButton(true)}>Создать проект</button>
       </header>
-      {activeCraeteButton && (<Modal active={activeCraeteButton} setActive={setActiveCreateButton}/>)}
+      {activeCraeteButton && (<Modal content={"Данный функционал ещё не реализован."} setActive={setActiveCreateButton}/>)}
     </>
   );
 }
