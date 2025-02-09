@@ -5,7 +5,7 @@ import { TableRow } from './TableRow';
 export const TableBody = () => {
   const filteredData = data.filter((item)=>item.sysId === 'PROJECT_DEF');
   
-  const [projectData,setProjectData] = useState(filteredData);
+  const [projectData,] = useState(filteredData);
 
 
 
