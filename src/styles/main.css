@@ -221,6 +221,10 @@ table {
   align-items: center;
 }
 
+.table__cell {
+  height: 80%;
+}
+
 tr {
   border-bottom: 1px solid #d7d7d7;
 }
