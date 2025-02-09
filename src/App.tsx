@@ -3,7 +3,14 @@ import { Table } from './components/table/Table'
 
 
 function App() {
-  
+  const test =()=>{
+       fetch('./projects.json')
+      .then((res)=> {
+        console.log(res.body)
+      })
+      
+    }
+    test();
   return (
     <>
       <Header/>
