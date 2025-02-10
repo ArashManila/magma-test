@@ -1,6 +1,6 @@
 
 type TableCellProps={
-  data:string | undefined
+  data:string 
 }
 export const TableCell = ({data}:TableCellProps)=>{
   return(

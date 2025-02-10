@@ -2,7 +2,7 @@
   {
     "$id": "1",
     "$type": "Tdms.Farvater.WebApi.DTO.Objects.ProjectsDocumentation.ProjectDto, Tdms.Farvater",
-    "title": "Саяно-Шушенская",
+    "title": "Жилой квратал перменной этажности в границах улиц Лермонтова  Некрасова Гоголя Пушкина в советском районе г Омска",
     "identifier": 337,
     "capitalConstructionType": {
       "$id": "2",
@@ -61,6 +61,7 @@
     "handle": "THDCF803D5F8040000000000",
     "sysId": "PROJECT_DEF"
   },
+  
   {
     "$id": "8",
     "$type": "Tdms.Farvater.WebApi.DTO.Objects.ProjectsDocumentation.ProjectDto, Tdms.Farvater",

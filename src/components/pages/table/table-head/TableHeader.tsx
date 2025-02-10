@@ -42,7 +42,7 @@ export const TableHeader = () => {
         const dx = e.clientX - startX;
         let newWidth = startWidth + dx;
 
-        const minWidth = 150;
+        const minWidth = 50;
         newWidth = Math.max(newWidth, minWidth);
 
         const totalWidth = columnsWidth.reduce((acc, width) => acc + width, 0);
