@@ -1,8 +1,9 @@
+import { project } from "../../types/types";
 import { TableCell } from "./TableCell";
 
 type tableRow ={
   index:number,
-  item: any
+  item: project
 }
 export const TableRow=({item,index}:tableRow)=>{
 
