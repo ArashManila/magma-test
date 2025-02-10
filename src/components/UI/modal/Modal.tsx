@@ -1,4 +1,4 @@
-import crossButton from '../../images/close-black-button.svg'
+import crossButton from '../../../images/close-black-button.svg'
 
 type ModalProps = {
   setActive: (active: boolean) => void;

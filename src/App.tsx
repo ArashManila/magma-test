@@ -1,13 +1,13 @@
-import { Header } from './components/header/Header'
-import { Table } from './components/table/Table'
+import { Header } from "./components/pages/header/Header";
+import { Table } from "./components/pages/table/Table";
 
 function App() {
   return (
     <>
-      <Header/>
-      <Table/>
+      <Header />
+      <Table />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
