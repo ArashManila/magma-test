@@ -11,8 +11,8 @@ export const TableBody = ({ proj }: tableBodyProps) => {
     <>
       <tbody>
         {filteredData ? (
-          filteredData.map((item, index) => (
-            <TableRow key={item.identifier} index={index} item={item} />
+          filteredData.map((item) => (
+            <TableRow key={item.identifier} index={item.$id} item={item} />
           ))
         ) : (
           <></>

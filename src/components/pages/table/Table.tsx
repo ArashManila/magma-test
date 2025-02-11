@@ -27,7 +27,7 @@ export const Table = () => {
         {loading ? (
           <Loading/>
         ) : (
-          <TableBody proj={projects} />
+          <TableBody proj={projects}/>
         )}
       </table>
       {activeErrorPanel && (

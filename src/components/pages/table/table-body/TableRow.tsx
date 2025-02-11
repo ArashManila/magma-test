@@ -2,7 +2,7 @@ import { project } from "../../../types/types";
 import { TableCell } from "./TableCell";
 
 type tableRow = {
-  index: number;
+  index: string;
   item: project;
 };
 export const TableRow = ({ item, index }: tableRow) => {
