@@ -78,6 +78,7 @@ export const TableHeader = () => {
         {categories.map((category, index) => (
           <th
             key={category.id}
+            className="table__header-cell"
             ref={(el) => {
               if (el) {
                 thRefs.current[index] = el;

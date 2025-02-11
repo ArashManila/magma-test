@@ -22,7 +22,7 @@ export const Table = () => {
 
   return (
     <main className="content">
-      <table>
+      <table className="table">
         <TableHeader />
         {loading ? (
           <Loading/>

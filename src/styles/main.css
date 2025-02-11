@@ -201,39 +201,34 @@ button {
   padding-inline: 10px;
 }
 
-th {
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.table__header-cell {
   background-color: #f1f1f2;
   padding-inline: 0;
   height: 50px;
   border-bottom: 1px solid #d7d7d7;
   border-right: 1px solid #d7d7d7;
 }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
+.table__row {
+  border-bottom: 1px solid #d7d7d7;
 }
-
 .table__data {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.table__cell {
-  height: 90%;
-  word-break: break-all;
-}
-
-tr {
-  border-bottom: 1px solid #d7d7d7;
-}
-
-td {
+.table__cell-container {
   text-align: center;
   max-width: 200px;
   height: 70px;
+}
+.table__cell {
+  height: 90%;
+  word-break: break-all;
 }
 
 .cookies__alert {

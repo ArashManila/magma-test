@@ -20,7 +20,7 @@ export const TableRow = ({ item, index }: tableRow) => {
     return combinedDate;
   };
   return (
-    <tr key={index}>
+    <tr className="table__row" key={index}>
       <TableCell data={item.description} />
       <TableCell data={item.title} />
       <TableCell data={item.gip?.description} />

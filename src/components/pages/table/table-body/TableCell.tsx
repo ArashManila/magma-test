@@ -4,7 +4,7 @@ type TableCellProps={
 }
 export const TableCell = ({data}:TableCellProps)=>{
   return(
-    <td>
+    <td className="table__cell-container">
       <div className="table__cell">
         {data}
       </div>
