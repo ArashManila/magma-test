@@ -1,6 +1,7 @@
 import { useState } from "react";
 import homeIcon from "../../../images/home-icon.svg";
 import Modal from "../../UI/modal/Modal";
+import { AccentButton } from "../../UI/button/AccentButton";
 
 export const Header = () => {
   const [activeCraeteButton, setActiveCreateButton] = useState<boolean>(false);
@@ -19,12 +20,9 @@ export const Header = () => {
           &gt;
           <span>Проекты</span>
         </div>
-        <button
-          className="button header-button"
-          onClick={() => setActiveCreateButton(true)}
-        >
-          Создать проект
-        </button>
+        <AccentButton onClick={() => setActiveCreateButton(true)}>
+          <span>Создать проект</span>
+        </AccentButton>
       </header>
       {activeCraeteButton && (
         <Modal
