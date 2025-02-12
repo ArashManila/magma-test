@@ -1,4 +1,3 @@
-
 type TableCellProps={
   data:string 
 }

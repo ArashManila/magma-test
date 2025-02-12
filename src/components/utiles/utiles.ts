@@ -9,4 +9,18 @@ const makeid = (length:number) => {
   return text;
 }
 
-export default { makeid };
+const convertMonth = (month: number) => {
+  const converted_m = month + 1;
+  if (converted_m < 10) return `0${converted_m}`;
+  else return converted_m.toString();
+};
+
+const convertDate = (date: string) => {
+  const newDate = new Date(date);
+  const combinedDate = `${newDate.getDate()}.${convertMonth(
+    newDate.getMonth()
+  )}.${newDate.getFullYear()}`;
+  return combinedDate;
+};
+
+export default { makeid, convertDate};
