@@ -7,15 +7,17 @@ type tableRow = {
   item: project;
 };
 export const TableRow = ({ item, index }: tableRow) => {
+
+  const getStringOrDefault = (value: string | undefined) => value ?? "";
   
   return (
     <tr className="table__row" key={index}>
-      <TableCell data={item.description} />
-      <TableCell data={item.title} />
-      <TableCell data={item.gip?.description} />
-      <TableCell data={item.capitalConstructionType.description} />
-      <TableCell data={item.projectType.description} />
-      <TableCell data={utiles.convertDate(item.finishDate)} />
+      <TableCell data={getStringOrDefault(item.description)} />
+      <TableCell data={getStringOrDefault(item.title)} />
+      <TableCell data={getStringOrDefault(item.gip?.description)} />
+      <TableCell data={getStringOrDefault(item.capitalConstructionType.description)} />
+      <TableCell data={getStringOrDefault(item.projectType.description)} />
+      <TableCell data={getStringOrDefault(utiles.convertDate(item.finishDate))} />
     </tr>
   );
 };
