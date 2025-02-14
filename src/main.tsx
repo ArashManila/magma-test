@@ -1,7 +1,7 @@
-import { StrictMode } from 'react'
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import './styles/main.css'
-import App from './App.tsx'
+import './styles/main.css';
+import App from './App.tsx';
 
 const rootElement = document.getElementById('root');
 
