@@ -8,6 +8,7 @@ const requiredFields: Array<keyof project> = [
   "startDate", 
   "projectsObject", 
   "code", 
+  "projectType",
   "notation", 
   "createUser", 
   "createTime", 
